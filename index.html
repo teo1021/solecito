@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Para ti</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="stars" aria-hidden="true"></div>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-copy">
+          <p class="eyebrow">Una página secreta</p>
+          <h1>Para la persona que convirtió mis días en algo bonito.</h1>
+          <p class="intro">
+            Escaneaste el QR correcto, con mucho amor para mi solecito.
+          </p>
+          <a class="primary-button" href="#recuerdos">Abrir sorpresa</a>
+        </div>
+        <div class="floating-photo" aria-label="Foto destacada">
+          <img src="assets/portada.jpeg" alt="Foto de ella para la portada" />
+          <div class="rose-pin" aria-hidden="true">
+            <span class="rose-flower"></span>
+            <span class="rose-stem"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="memory-strip" id="recuerdos">
+        <div>
+          <p class="eyebrow">Nuestros momentos</p>
+          <h2>Un museo pequeñito de nosotros</h2>
+        </div>
+        <div class="photo-grid">
+          <figure>
+            <img src="assets/recuerdo-1.jpeg" alt="Recuerdo juntos en el parque" />
+            <figcaption>La vez que estar contigo hizo que todo se sintiera tranquilo.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/recuerdo-2.jpeg" alt="Foto juntos sonriendo" />
+            <figcaption>Tu sonrisa en esta foto tiene mi día entero guardado.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/recuerdo-3.jpeg" alt="Recuerdo juntos de noche en el parque" />
+            <figcaption>Esa noche también se volvió de mis recuerdos favoritos contigo.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="video-memory">
+        <div>
+          <p class="eyebrow">Un momento vivo</p>
+          <h2>Para volver a verlo cuando te extrañe</h2>
+        </div>
+        <video controls playsinline preload="metadata" src="assets/momento.mp4"></video>
+      </section>
+
+      <section class="letter">
+        <p class="eyebrow">Mensaje guardado</p>
+        <h2>Quería decirte esto</h2>
+        <p>
+          Amor, hice esta página porque hay cosas que una carta normal no alcanza
+          a sostener. Me gusta la forma en que apareces en mis días, cómo haces
+          que lo simple tenga brillo y cómo, sin darte cuenta, te vuelves hogar.
+        </p>
+        <p>
+          Gracias por existir conmigo de esta manera. Ojalá esta sorpresa te robe
+          una sonrisa de esas que me dejan pensando en ti todo el día.
+        </p>
+      </section>
+
+      <section class="playlist">
+        <div>
+          <p class="eyebrow">Banda sonora</p>
+          <h2>Canciones para abrir contigo</h2>
+        </div>
+        <div class="track-list">
+          <a href="https://open.spotify.com/track/5QSYWruQQ7kBCHScI4xJ9g" target="_blank" rel="noreferrer">Nuestra canción</a>
+          <a href="https://open.spotify.com/track/5WGl8T9s7dvX1ugVzw0xXX" target="_blank" rel="noreferrer">La que me recuerda a ti</a>
+          <a href="https://open.spotify.com/track/4WQaXkwA43WaPBuAZdtoe1" target="_blank" rel="noreferrer">La que te dedicaría</a>
+        </div>
+      </section>
+
+      <section class="game" id="juego">
+        <div class="game-header">
+          <div>
+            <p class="eyebrow">Misión final</p>
+            <h2>Encuentra los 5 corazones</h2>
+          </div>
+          <p class="score"><span id="score">0</span>/5</p>
+        </div>
+        <div class="heart-field" id="heartField" aria-label="Mini juego de corazones"></div>
+        <div class="secret-message" id="secretMessage">
+          Cuando los encuentres todos, aparece el mensaje secreto.
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
